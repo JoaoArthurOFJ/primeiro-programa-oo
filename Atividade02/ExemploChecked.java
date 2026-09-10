@@ -1,24 +1,24 @@
 package Atividade02;
 
 import java.io.FileReader;
-import java.io.FileNotFoundException;
+import java.io.IOException;
  
 public class ExemploChecked {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
  
         // TRY/CATCH:
         // Aqui o try/catch é OBRIGATÓRIO (ou seria preciso declarar
         // "throws FileNotFoundException" na assinatura do main).
         // Sem isso, o código nem compila.
-        try {
+        try (FileReader arquivo = new FileReader("dados.txt")) {
             // EXCEÇÃO CHECKED:
             // FileNotFoundException é uma checked exception.
             // O compilador VERIFICA e EXIGE tratamento, porque é um
             // problema fora do controle do programa (o arquivo pode
             // não existir no sistema de arquivos).
-            FileReader arquivo = new FileReader("dados.txt");
-        } catch (FileNotFoundException e) {
-            System.out.println("Arquivo não encontrado.");
+            System.out.println("Arquivo aberto com sucesso.");
+        } catch (final IOException e) {
+            System.out.println("Não foi possível abrir o arquivo.");
         }
     }
 }
