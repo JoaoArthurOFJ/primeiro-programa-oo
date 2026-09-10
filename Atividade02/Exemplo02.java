@@ -1,3 +1,5 @@
+package Atividade02;
+
 // EXCEÇÃO CUSTOMIZADA:
 // Classe própria criada para dar um nome mais claro ao problema,
 // em vez de usar uma exceção genérica como IllegalArgumentException.

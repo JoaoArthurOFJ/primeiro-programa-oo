@@ -1,3 +1,4 @@
+package Atividade02;
 
 class ContaBancaria {
     protected double saldo;

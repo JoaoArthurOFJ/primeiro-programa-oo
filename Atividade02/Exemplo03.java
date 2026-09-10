@@ -1,3 +1,5 @@
+package Atividade02;
+
 // TRY-WITH-RESOURCES / AUTOCLOSEABLE:
 // A classe implementa AutoCloseable, o que permite que instâncias
 // dela sejam usadas dentro de um try(...) e sejam fechadas

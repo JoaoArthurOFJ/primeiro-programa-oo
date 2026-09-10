@@ -1,3 +1,5 @@
+package Atividade02;
+
 import java.io.FileReader;
 import java.io.FileNotFoundException;
  

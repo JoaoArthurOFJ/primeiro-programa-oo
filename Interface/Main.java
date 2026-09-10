@@ -1,3 +1,5 @@
+package Interface;
+
 // INTERFACE: define um contrato que as classes devem seguir
 interface MeioDePagamento {
     void pagar(double valor);
